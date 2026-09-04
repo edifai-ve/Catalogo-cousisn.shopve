@@ -15,20 +15,8 @@ app.use(express.json());
 app.use('/images', express.static(path.join(__dirname, 'public/images')));
 
 // ============================================
-// RUTAS DE LA API
+// RUTAS DE LA API (SIEMPRE PRIMERO)
 // ============================================
-
-app.get('/', (req, res) => {
-  res.json({
-    mensaje: '🛍️ Bienvenido a Cousins Shop API',
-    endpoints: {
-      productos: '/api/productos',
-      productoPorId: '/api/productos/:id',
-      categorias: '/api/categorias',
-      salud: '/api/health'
-    }
-  });
-});
 
 app.get('/api/productos', (req, res) => {
   const { busqueda, categoria } = req.query;
@@ -84,21 +72,41 @@ app.get('/api/health', (req, res) => {
   res.json({
     status: 'OK',
     timestamp: new Date().toISOString(),
-    productos: productos.length,
-    version: '1.0.0'
+    productos: productos.length
   });
 });
 
 // ============================================
-// SERVIR FRONTEND (SOLO EN PRODUCCIÓN)
+// SERVIR FRONTEND (VERSIÓN RAILWAY)
 // ============================================
 
-// Servir archivos estáticos del frontend
-const frontendPath = path.join(__dirname, '..', 'frontend', 'dist');
+// Opción 1: Buscar en diferentes lugares
+const possiblePaths = [
+  path.join(__dirname, '../frontend/dist'),
+  path.join(__dirname, '../../frontend/dist'),
+  path.join(process.cwd(), 'frontend/dist')
+];
+
+let frontendPath = null;
+for (const p of possiblePaths) {
+  const fs = require('fs');
+  if (fs.existsSync(p)) {
+    frontendPath = p;
+    break;
+  }
+}
+
+if (!frontendPath) {
+  console.log('⚠️ No se encontró el frontend en las rutas esperadas');
+  frontendPath = path.join(__dirname, '../frontend/dist');
+}
+
 console.log('📁 Sirviendo frontend desde:', frontendPath);
+
+// Servir archivos estáticos
 app.use(express.static(frontendPath));
 
-// Redirigir todas las rutas no API al index.html
+// Redirigir TODAS las rutas que no sean API al index.html
 app.get('*', (req, res) => {
   res.sendFile(path.join(frontendPath, 'index.html'));
 });
@@ -111,5 +119,5 @@ app.listen(PORT, () => {
   console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
   console.log(`📦 API disponible en /api/productos`);
   console.log(`📦 Total productos: ${productos.length}`);
-  console.log(`✨ Visita http://localhost:${PORT} para ver la tienda`);
+  console.log(`📁 Sirviendo frontend desde: ${frontendPath}`);
 });
