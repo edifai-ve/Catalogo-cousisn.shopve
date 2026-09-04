@@ -1,0 +1,17 @@
+[phases.setup]
+nixPkgs = ["nodejs"]
+
+[phases.install]
+cmds = ["npm install -g pnpm", "cd backend && pnpm install", "cd ../frontend && pnpm install"]
+
+[phases.build]
+cmds = ["cd frontend && pnpm run build"]
+
+[start]
+cmd = "cd backend && node server.js"
+
+[build]
+copyFiles = [
+  { from = "backend", to = "/app/backend" },
+  { from = "frontend/dist", to = "/app/frontend/dist" }
+]
