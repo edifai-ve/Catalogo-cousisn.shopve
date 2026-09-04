@@ -1,0 +1,10 @@
+{
+  "name": "cousins-shop",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --dir fronted dev",
+    "dev:frontend": "pnpm --dir fronted dev",
+    "dev:backend": "pnpm --dir backend dev",
+    "build": "pnpm --dir fronted build"
+  }
+}

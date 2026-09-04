@@ -1,0 +1,104 @@
+require('dotenv').config();
+const express = require('express');
+const cors = require('cors');
+const productos = require('./src/data/productos.json');
+
+const app = express();
+const PORT = process.env.PORT || 5000;
+
+// Middlewares
+app.use(cors());
+app.use(express.json());
+app.use('/images', express.static('public/images'));
+// ============================================
+// RUTA RAÍZ (para evitar "Cannot GET /")
+// ============================================
+app.get('/', (req, res) => {
+  res.json({
+    mensaje: '🛍️ Bienvenido a Cousins Shop API',
+    endpoints: {
+      productos: '/api/productos',
+      productoPorId: '/api/productos/:id',
+      categorias: '/api/categorias',
+      salud: '/api/health'
+    },
+    documentacion: 'Visita /api/productos para ver los productos'
+  });
+});
+
+// ============================================
+// RUTAS DE LA API
+// ============================================
+
+// Obtener todos los productos (con filtros)
+app.get('/api/productos', (req, res) => {
+  const { busqueda, categoria } = req.query;
+  let resultado = productos;
+
+  if (busqueda) {
+    const termino = busqueda.toLowerCase();
+    resultado = resultado.filter(p => 
+      p.nombre.toLowerCase().includes(termino) ||
+      p.descripcion.toLowerCase().includes(termino)
+    );
+  }
+
+  if (categoria) {
+    resultado = resultado.filter(p => 
+      p.categoria.toLowerCase() === categoria.toLowerCase()
+    );
+  }
+
+  res.json({
+    success: true,
+    count: resultado.length,
+    data: resultado
+  });
+});
+
+// Obtener un producto por ID
+app.get('/api/productos/:id', (req, res) => {
+  const id = parseInt(req.params.id);
+  const producto = productos.find(p => p.id === id);
+  
+  if (!producto) {
+    return res.status(404).json({
+      success: false,
+      error: 'Producto no encontrado'
+    });
+  }
+  
+  res.json({
+    success: true,
+    data: producto
+  });
+});
+
+// Obtener todas las categorías
+app.get('/api/categorias', (req, res) => {
+  const categorias = [...new Set(productos.map(p => p.categoria))];
+  res.json({
+    success: true,
+    data: categorias
+  });
+});
+
+// Ruta de salud
+app.get('/api/health', (req, res) => {
+  res.json({
+    status: 'OK',
+    timestamp: new Date().toISOString(),
+    productos: productos.length,
+    version: '1.0.0'
+  });
+});
+
+// ============================================
+// INICIAR SERVIDOR
+// ============================================
+app.listen(PORT, () => {
+  console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
+  console.log(`📦 API disponible en /api/productos`);
+  console.log(`📦 Total productos: ${productos.length}`);
+  console.log(`✨ Visita http://localhost:${PORT} para ver los endpoints`);
+});

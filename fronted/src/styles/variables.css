@@ -1,0 +1,33 @@
+:root {
+  /* Colores principales de la tienda */
+  --primary-color: #e26899;
+  --primary-dark: #d14a82;
+  --primary-light: #f5c4d9;
+  --primary-gradient: linear-gradient(135deg, #e26899, #d14a82);
+  
+  /* Colores secundarios */
+  --secondary-color: #fffeff;
+  --accent-color: #f8e8ee;
+  --text-color: #4a2c3a;
+  --text-muted: #8a6a7a;
+  --text-light: #fffeff;
+  
+  /* Fondos */
+  --background-color: #f0e0e6;
+  --card-background: #fffeff;
+  --card-hover: #fff5f8;
+  
+  /* Sombras */
+  --box-shadow: 0 4px 20px rgba(226, 104, 153, 0.15);
+  --box-shadow-hover: 0 8px 35px rgba(226, 104, 153, 0.25);
+  
+  /* Bordes */
+  --border-radius: 16px;
+  --border-radius-sm: 10px;
+  
+  /* Fuentes */
+  --font-family: 'Georgia', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  /* Transiciones */
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
