@@ -94,11 +94,13 @@ app.get('/api/health', (req, res) => {
 // ============================================
 
 // Servir archivos estáticos del frontend
-app.use(express.static(path.join(__dirname, '../frontend/dist')));
+const frontendPath = path.join(__dirname, '..', 'frontend', 'dist');
+console.log('📁 Sirviendo frontend desde:', frontendPath);
+app.use(express.static(frontendPath));
 
-// Redirigir todas las rutas no API al index.html del frontend
+// Redirigir todas las rutas no API al index.html
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
+  res.sendFile(path.join(frontendPath, 'index.html'));
 });
 
 // ============================================
