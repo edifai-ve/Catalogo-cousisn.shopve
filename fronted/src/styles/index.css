@@ -521,3 +521,61 @@ ul, ol {
   color: var(--primary-color);
   border: 2px solid var(--primary-color);
 }
+/* ============================================
+   RESPONSIVE - GENERAL
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+  
+  .btn {
+    padding: 8px 18px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 12px;
+  }
+  
+  .btn {
+    padding: 6px 14px;
+    font-size: 0.75rem;
+    border-radius: 20px;
+  }
+
+  .page-decoration::before {
+    content: '✦ ✦';
+    font-size: 0.8rem;
+    right: 10px;
+    letter-spacing: 4px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    padding: 0 8px;
+  }
+  
+  .btn {
+    padding: 4px 10px;
+    font-size: 0.65rem;
+    border-radius: 16px;
+  }
+
+  .page-decoration::before {
+    content: '✦';
+    font-size: 0.6rem;
+    right: 6px;
+    letter-spacing: 0;
+  }
+}

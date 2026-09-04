@@ -12,6 +12,8 @@
   color: var(--primary-color);
   font-size: 1rem;
   opacity: 0.6;
+  display: flex;
+  align-items: center;
 }
 
 .search-input {
@@ -63,4 +65,85 @@
 .search-clear:hover {
   color: var(--primary-color);
   background: var(--accent-color);
+}
+
+/* ============================================
+   RESPONSIVE - BARRA DE BÚSQUEDA
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .search-bar {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    max-width: 100%;
+  }
+
+  .search-input {
+    padding: 10px 18px;
+    padding-left: 40px;
+    padding-right: 35px;
+    font-size: 0.9rem;
+    border-radius: 25px;
+  }
+
+  .search-icon {
+    left: 14px;
+    font-size: 0.9rem;
+  }
+
+  .search-clear {
+    right: 12px;
+    font-size: 1rem;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-input {
+    padding: 8px 14px;
+    padding-left: 36px;
+    padding-right: 30px;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    border-width: 1.5px;
+  }
+  
+  .search-icon {
+    left: 12px;
+    font-size: 0.8rem;
+  }
+  
+  .search-clear {
+    right: 10px;
+    font-size: 0.9rem;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .search-input {
+    padding: 6px 12px;
+    padding-left: 30px;
+    padding-right: 25px;
+    font-size: 0.7rem;
+    border-radius: 18px;
+  }
+  
+  .search-icon {
+    left: 10px;
+    font-size: 0.7rem;
+  }
+  
+  .search-clear {
+    right: 8px;
+    font-size: 0.8rem;
+    width: 18px;
+    height: 18px;
+  }
 }

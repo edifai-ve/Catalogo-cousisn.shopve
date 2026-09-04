@@ -31,3 +31,21 @@
   /* Transiciones */
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* ============================================
+   VARIABLES RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+  :root {
+    --border-radius: 12px;
+    --border-radius-sm: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --border-radius: 10px;
+    --border-radius-sm: 6px;
+  }
+}
