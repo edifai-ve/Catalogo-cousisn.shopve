@@ -12,6 +12,9 @@ cmds = [
   "npm run build --prefix frontend"
 ]
 
+[phases.build.env]
+VITE_API_URL = "https://catalogo-cousinshopve-production.up.railway.app"
+
 [start]
 cmd = "cd backend && node server.js"
 
