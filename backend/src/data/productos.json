@@ -3,7 +3,7 @@
     "id": 1,
     "nombre": "Agenda clásica",
     "precio": 13,
-    "imagen": "http://localhost:5000/images/agenda.jpg",
+    "imagen": "/images/agenda.jpg",
     "descripcion": "Contiene 100 hojas y puedes combinar hasta 5 diseños diferentes en una sola agenda. Ejemplo: Hoja con mensaje motivacional, Calendario, Hojas para datos personales, Hoja para notas, Hojas rayadas",
     "categoria": "Papelería"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "nombre": "Agenda holográfica",
     "precio": 15,
-    "imagen": "http://localhost:5000/images/agendaHolografica.jpg",
+    "imagen": "/images/agendaHolografica.jpg",
     "descripcion": "Agenda con efecto holográfico, ideal para crear diseños únicos Contiene 100 hojas y puedes combinar hasta 5 diseños diferentes en una sola agenda. ",
     "categoria": "Papelería"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "nombre": "Bolígrafos",
     "precio": 3,
-    "imagen": "http://localhost:5000/images/boligrafo.jpg",
+    "imagen": "/images/boligrafo.jpg",
     "descripcion": "Bolígrafos de tinta de alta calidad, ideal para escritura diaria, personalizados a tu estilo",
     "categoria": "Papelería"
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "nombre": "Portarretratos",
     "precio": 10,
-    "imagen": "http://localhost:5000/images/portarretrato.jpg",
+    "imagen": "/images/portarretrato.jpg",
     "descripcion": "Portarretratos de madera, tamaño pequeño, ideal para fotos familiares o recuerdos especiales",
     "categoria": "Decoración"
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "nombre": "Llavero en acrílico",
     "precio": 2.5,
-    "imagen": "http://localhost:5000/images/llaveroAcrilico.jpg",
+    "imagen": "/images/llaveroAcrilico.jpg",
     "descripcion": "Llavero de acrílico transparente, personalizado con tus diseños favoritos Precio: 2.5$, Llavero + caja 3.5$, 2 llaveros + caja 5$",
     "categoria": "Accesorios"
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "nombre": "6 Polaroids",
     "precio": 2,
-    "imagen": "http://localhost:5000/images/polaroids.jpg",
+    "imagen": "/images/polaroids.jpg",
     "descripcion": "Paquete de 6 fotos polaroid, tamaño 10x15cm, ideal para recuerdos y decoración. Puedes personalizar tus fotos con filtros y marcos.",
     "categoria": "Decoración"
   },
@@ -51,7 +51,7 @@
     "id": 7,
     "nombre": "50 tatuajes temporales",
     "precio": 7,
-    "imagen": "http://localhost:5000/images/tatuajes.jpg",
+    "imagen": "/images/tatuajes.jpg",
     "descripcion": "Tatuajes temporales de alta calidad, personalizados e ideales para usar en ocasiones especiales, con un tamaño 3x3cm.",
     "categoria": "Accesorios"
   },
@@ -59,7 +59,7 @@
     "id": 8,
     "nombre": "Almohada personalizada",
     "precio": 7,
-    "imagen": "http://localhost:5000/images/almohadas.jpg",
+    "imagen": "/images/almohadas.jpg",
     "descripcion": "Almohada de alta calidad, personalizada con tu diseño favorito",
     "categoria": "Decoración"
   },
@@ -67,7 +67,7 @@
     "id": 9,
     "nombre": "Llavero con espejo",
     "precio": 5,
-    "imagen": "http://localhost:5000/images/llaveroEspejo.jpg",
+    "imagen": "/images/llaveroEspejo.jpg",
     "descripcion": "Llavero sublimado por ambos lados, al abrir contiene dos espejos. Ideal para regalar.",
     "categoria": "Accesorios"
   },
@@ -75,7 +75,7 @@
     "id": 10,
     "nombre": "24 Tags",
     "precio": 1,
-    "imagen": "http://localhost:5000/images/Tags.jpg",
+    "imagen": "/images/Tags.jpg",
     "descripcion": "Ideales para personalizar tus obsequios, con imagen en ambos lados. 100% personalizables.",
     "categoria": "Accesorios"
   },
@@ -83,7 +83,7 @@
     "id": 11,
     "nombre": "Taza sublimada",
     "precio": 5,
-    "imagen": "http://localhost:5000/images/Taza.jpg",
+    "imagen": "/images/Taza.jpg",
     "descripcion": "Taza sublimada con tu diseño favorito. Ideal para regalar o para uso personal .",
     "categoria": "Decoración"
   },
@@ -91,7 +91,7 @@
     "id": 12,
     "nombre": "Mini album",
     "precio": 3,
-    "imagen": "http://localhost:5000/images/miniAlbum.jpg",
+    "imagen": "/images/miniAlbum.jpg",
     "descripcion": "Tu historia merece ser recordada con cariño… Por eso creamos este mini álbum personalizado que guarda 20 fotos llenas de magia,",
     "categoria": "Recuerdos"
   },
@@ -99,7 +99,7 @@
     "id": 13,
     "nombre": "Carpeta control de embarazo ",
     "precio": 10,
-    "imagen": "http://localhost:5000/images/carpetaEmbarazo.jpg",
+    "imagen": "/images/carpetaEmbarazo.jpg",
     "descripcion": "Ideal para llevar los resultados de las pruebas, personalizable con relieve.",
     "categoria": "Carpetas"
   },
@@ -107,7 +107,7 @@
     "id": 14,
     "nombre": "Toppers personalizados",
     "precio": 2,
-    "imagen": "http://localhost:5000/images/TopperPersonalizado.jpg",
+    "imagen": "/images/TopperPersonalizado.jpg",
     "descripcion": "Ideal para decorar tus tortas con tu diseño favorito.",
     "categoria": "Pastelería"
   },
@@ -115,7 +115,7 @@
     "id": 15,
     "nombre": "Cajita tipo acordeón ",
     "precio": 5,
-    "imagen": "http://localhost:5000/images/cajaAcordeon.jpg",
+    "imagen": "/images/cajaAcordeon.jpg",
     "descripcion": "Es ese detalle que dice “cada foto contigo vale oro, ideal oara aniversarios, cumpleaños o amigos del alma” ",
     "categoria": "Recuerdos"
   },
@@ -123,7 +123,7 @@
     "id": 16,
     "nombre": "Mini glass",
     "precio": 6,
-    "imagen": "http://localhost:5000/images/miniGlass.jpg",
+    "imagen": "/images/miniGlass.jpg",
     "descripcion": "Crea un regalo único personalizado con tus fotos y frase favorita, incluye caja de regalo.",
     "categoria": "Recuerdos"
   },
@@ -131,7 +131,7 @@
     "id": 17,
     "nombre": "Cuadro con luces",
     "precio": 10,
-    "imagen": "http://localhost:5000/images/cuadroLuces.jpg",
+    "imagen": "/images/cuadroLuces.jpg",
     "descripcion": "Cuadro con luces LED, ideal para iluminar tu espacio. Personalizable con tu diseño favorito.",
     "categoria": "Decoración"
   },
@@ -139,7 +139,7 @@
     "id": 18,
     "nombre": "Relicario",
     "precio": 8,
-    "imagen": "http://localhost:5000/images/Relicario.jpg",
+    "imagen": "/images/Relicario.jpg",
     "descripcion": "Recuerda siempre esa persona especial, con un relicario personalizado con dos imaganes.",
     "categoria": "Accesorios"
   },
@@ -147,7 +147,7 @@
     "id": 19,
     "nombre": "12 Toppers genéricos",
     "precio": 5,
-    "imagen": "http://localhost:5000/images/toppers.jpg",
+    "imagen": "/images/toppers.jpg",
     "descripcion": "Toppers genéricos para decorar tus tortas, con mensajes de Happy birthday en vaarios colores.",
     "categoria": "Pastelería"
   },
@@ -155,7 +155,7 @@
     "id": 20,
     "nombre": "Llavero personalizado",
     "precio": 3,
-    "imagen": "http://localhost:5000/images/llavero.jpg",
+    "imagen": "/images/llavero.jpg",
     "descripcion": "Realizamos la sublimación del estampado que desees. Personalizado con ambos lados.",
     "categoria": "Accesorios"
   },
@@ -163,7 +163,7 @@
     "id": 21,
     "nombre": "36 tarjetas de presentación",
     "precio": 1,
-    "imagen": "http://localhost:5000/images/tarjetaPresentacion.jpg",
+    "imagen": "/images/tarjetaPresentacion.jpg",
     "descripcion": "Tarjetas de presentación personalizadas para tu emprendimiento.",
     "categoria": "Emprendimiento"
   },
@@ -171,7 +171,7 @@
     "id": 22,
     "nombre": "Lata personalizada",
     "precio": 8,
-    "imagen": "http://localhost:5000/images/lata.jpg",
+    "imagen": "/images/lata.jpg",
     "descripcion": "Lata de regalo personalizada con tu diseño favorito, ideal para obsequiar a tus seres queridos.",
     "categoria": "Decoración"
   },
@@ -179,7 +179,7 @@
     "id": 23,
     "nombre": "Collar del recuerdo",
     "precio": 6,
-    "imagen": "http://localhost:5000/images/collarrecuerdo.jpg",
+    "imagen": "/images/collarrecuerdo.jpg",
     "descripcion": "Atrapamos ese recuerdo, esa persona, esa mascota o ese lugar especial en un collar único e irrompible.",
     "categoria": "Accesorios"
   },
@@ -187,7 +187,7 @@
     "id": 24,
     "nombre": "Etiquetas",
     "precio": 2,
-    "imagen": "http://localhost:5000/images/etiquetas.jpg",
+    "imagen": "/images/etiquetas.jpg",
     "descripcion": "Etiquetas personalizadas diferentes tamaños,3x3 cm (48 unidades por hoja), 4x4 cm (24 unidades por hoja), 5x5 cm (15 unidades por hoja).",
     "categoria": "Emprendimiento"
   },
@@ -195,7 +195,7 @@
     "id": 25,
     "nombre": "Bambalina 2D",
     "precio": 1,
-    "imagen": "http://localhost:5000/images/bambalinas2d.jpg",
+    "imagen": "/images/bambalinas2d.jpg",
     "descripcion": "Bambalinas 2D, personalizadas con tu diseño favorito, perfecto para decorar tu arbolito de navidad.",
     "categoria": "Decoración"
   },
@@ -203,7 +203,7 @@
     "id": 26,
     "nombre": "Bambalina con foto",
     "precio": 3.5,
-    "imagen": "http://localhost:5000/images/bambalina.jpg",
+    "imagen": "/images/bambalina.jpg",
     "descripcion": "Bambalinas con foto en ambos lados, ideales para decorar tu arbolito de navidad.",
     "categoria": "Decoración"
   }
