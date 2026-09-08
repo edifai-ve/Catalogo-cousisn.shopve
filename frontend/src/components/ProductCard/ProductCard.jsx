@@ -4,12 +4,9 @@ import './ProductCard.css';
 const ProductCard = ({ producto }) => {
   const { nombre, precio, imagen, descripcion, categoria } = producto;
 
-  // 🔥 URL FIJA PARA RAILWAY
-  const API_URL = 'https://catalogo-cousinshopve-production.up.railway.app';
-
-  // Construir la URL de la imagen
+  // Construir la URL de la imagen (SIN el dominio de Railway, solo ruta relativa)
   const imagenUrl = imagen && imagen.startsWith('/') 
-    ? `${API_URL}${imagen}`
+    ? imagen
     : imagen || 'https://via.placeholder.com/300x200?text=Sin+Imagen';
 
   console.log('🖼️ Cargando imagen:', imagenUrl); // Para depuración
