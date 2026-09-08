@@ -13,10 +13,11 @@ cmds = [
 ]
 
 [start]
-cmd = "sh -c 'cd backend && node server.js & caddy run --config /app/Caddyfile'"
+cmd = "caddy fmt --overwrite /app/Caddyfile && sh -c 'cd backend && node server.js & caddy run --config /app/Caddyfile'"
 
 [build]
 copyFiles = [
   { from = "backend", to = "/app/backend" },
-  { from = "frontend/dist", to = "/app/frontend/dist" }
+  { from = "frontend/dist", to = "/app/frontend/dist" },
+  { from = "Caddyfile", to = "/app/Caddyfile" }
 ]
