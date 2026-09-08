@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
+const fs = require('fs');
 const productos = require('./src/data/productos.json');
 
 const app = express();
@@ -11,8 +12,16 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-// Servir imágenes
-app.use('/images', express.static(path.join(__dirname, 'public/images')));
+// ============================================
+// SERVIR IMÁGENES (CRÍTICO PARA QUE APAREZCAN)
+// ============================================
+
+// Las imágenes están en backend/public/images
+// Cuando Railway construye, las copia a /app/backend/public/images
+const imagesPath = path.join(__dirname, 'public/images');
+
+// Esta línea le dice a Express que sirva las imágenes en la URL /images
+app.use('/images', express.static(imagesPath));
 
 // ============================================
 // RUTAS DE LA API (SIEMPRE PRIMERO)
@@ -77,39 +86,11 @@ app.get('/api/health', (req, res) => {
 });
 
 // ============================================
-// SERVIR FRONTEND (VERSIÓN RAILWAY)
+// IMPORTANTE: NO SIRVAS EL FRONTEND AQUÍ
 // ============================================
-
-// Opción 1: Buscar en diferentes lugares
-const possiblePaths = [
-  path.join(__dirname, '../frontend/dist'),
-  path.join(__dirname, '../../frontend/dist'),
-  path.join(process.cwd(), 'frontend/dist')
-];
-
-let frontendPath = null;
-for (const p of possiblePaths) {
-  const fs = require('fs');
-  if (fs.existsSync(p)) {
-    frontendPath = p;
-    break;
-  }
-}
-
-if (!frontendPath) {
-  console.log('⚠️ No se encontró el frontend en las rutas esperadas');
-  frontendPath = path.join(__dirname, '../frontend/dist');
-}
-
-console.log('📁 Sirviendo frontend desde:', frontendPath);
-
-// Servir archivos estáticos
-app.use(express.static(frontendPath));
-
-// Redirigir TODAS las rutas que no sean API al index.html
-app.get('*', (req, res) => {
-  res.sendFile(path.join(frontendPath, 'index.html'));
-});
+// Caddy ya se encarga de servir el frontend. 
+// Si sirves el frontend aquí y también en Caddy, se produce un error 
+// de "Conexión cerrada" (ERR_CONNECTION_CLOSED).
 
 // ============================================
 // INICIAR SERVIDOR
@@ -118,6 +99,5 @@ app.get('*', (req, res) => {
 app.listen(PORT, () => {
   console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
   console.log(`📦 API disponible en /api/productos`);
-  console.log(`📦 Total productos: ${productos.length}`);
-  console.log(`📁 Sirviendo frontend desde: ${frontendPath}`);
+  console.log(`📁 Sirviendo imágenes desde: ${imagesPath}`);
 });
