@@ -14,7 +14,7 @@ const Header = ({ onSearch, searchValue }) => {
               <path d="M12 6L13.5 9.5L17.5 10.2L14.8 12.9L15.5 16.8L12 15L8.5 16.8L9.2 12.9L6.5 10.2L10.5 9.5L12 6Z" 
                 fill="#fffeff" stroke="#e26899" strokeWidth="1"/>
             </svg>
-            <span className="logo-text">Cousins<span className="logo-highlight">Shop</span></span>
+           <h1 className="logo-text">Cousins<span className="logo-highlight">Shop</span></h1>
           </div>
           <span className="header-badge">✦ Manualidades</span>
         </div>

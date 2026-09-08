@@ -7,7 +7,14 @@ const ProductCard = ({ producto }) => {
   return (
     <div className="product-card">
       <div className="product-card-image">
-        <img src={imagen} alt={nombre} loading="lazy" />
+       <img 
+  src={imagenUrl} 
+  alt={`${nombre} - Cousins Shop`}  // ← TEXTO ALT MEJORADO
+  loading="lazy"
+  onError={(e) => {
+    e.target.src = 'https://via.placeholder.com/300x200?text=Sin+Imagen';
+  }}
+/>
         <span className="product-category">{categoria}</span>
       </div>
       <div className="product-card-body">

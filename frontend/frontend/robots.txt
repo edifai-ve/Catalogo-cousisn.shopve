@@ -1,0 +1,6 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Mapa del sitio (lo crearemos después)
+Sitemap: https://catalogo-cousinshopve-production.up.railway.app/sitemap.xml
