@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["nodejs", "caddy"]
+nixPkgs = ["nodejs"]
 
 [phases.install]
 cmds = [
@@ -13,11 +13,10 @@ cmds = [
 ]
 
 [start]
-cmd = "caddy fmt --overwrite /app/Caddyfile && sh -c 'cd backend && node server.js & caddy run --config /app/Caddyfile'"
+cmd = "cd backend && node server.js"
 
 [build]
 copyFiles = [
   { from = "backend", to = "/app/backend" },
-  { from = "frontend/dist", to = "/app/frontend/dist" },
-  { from = "Caddyfile", to = "/app/Caddyfile" }
+  { from = "frontend/dist", to = "/app/frontend/dist" }
 ]
