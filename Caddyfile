@@ -3,4 +3,8 @@
     encode gzip
     file_server
     try_files {path} /index.html
+
+    handle /api* {
+        reverse_proxy localhost:5001
+    }
 }

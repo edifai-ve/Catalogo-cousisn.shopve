@@ -13,7 +13,7 @@ cmds = [
 ]
 
 [start]
-cmd = "cd backend && node server.js & caddy run --config /app/Caddyfile"
+cmd = "sh -c 'cd backend && node server.js & caddy run --config /app/Caddyfile'"
 
 [build]
 copyFiles = [
