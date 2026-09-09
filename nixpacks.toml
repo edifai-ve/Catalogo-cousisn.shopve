@@ -14,9 +14,3 @@ cmds = [
 
 [start]
 cmd = "cd backend && node server.js"
-
-[build]
-copyFiles = [
-  { from = "backend", to = "/app/backend" },
-  { from = "frontend", to = "/app/frontend" }
-]
