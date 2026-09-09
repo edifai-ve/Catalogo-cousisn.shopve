@@ -18,5 +18,5 @@ cmd = "cd backend && node server.js"
 [build]
 copyFiles = [
   { from = "backend", to = "/app/backend" },
-  { from = "frontend/dist", to = "/app/frontend/dist" }
+  { from = "frontend", to = "/app/frontend" }
 ]
