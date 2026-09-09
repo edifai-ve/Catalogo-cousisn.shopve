@@ -2,10 +2,11 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
+const fs = require('fs');
 const productos = require('./src/data/productos.json');
 
 const app = express();
-const PORT = 5000; 
+const PORT = process.env.PORT || 5000; // 👈 SIEMPRE el puerto de Railway
 
 app.use(cors());
 app.use(express.json());
@@ -30,8 +31,8 @@ app.get('/api/productos', (req, res) => {
 });
 
 app.get('/api/productos/:id', (req, res) => {
-  const id = parseInt(req.params.id);
-  const producto = productos.find(p => p.id === id);
+  const id = req.params.id;
+  const producto = productos.find(p => String(p.id) === String(id));
   if (!producto) {
     return res.status(404).json({ success: false, error: 'Producto no encontrado' });
   }
@@ -48,22 +49,23 @@ app.get('/api/health', (req, res) => {
 });
 
 // ============================================
-// SERVIR FRONTEND (Solución Nativa)
+// SERVIR EL FRONTEND (CON PROTECCIÓN ANTI-CRASH)
 // ============================================
-
-// El frontend compilado (dist) ya incluye las imágenes dentro de /dist/images
 const frontendPath = path.join(__dirname, '../frontend/dist');
-app.use(express.static(frontendPath));
 
-// Cualquier ruta que no sea API, redirigir al index.html
-app.get('*', (req, res) => {
-  res.sendFile(path.join(frontendPath, 'index.html'));
-});
+// Solo intenta servir el frontend si la carpeta existe
+if (fs.existsSync(frontendPath)) {
+  app.use(express.static(frontendPath));
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(frontendPath, 'index.html'));
+  });
+} else {
+  console.log('⚠️ No se encontró la carpeta dist, solo funcionará la API');
+}
 
 // ============================================
 // INICIAR SERVIDOR
 // ============================================
 app.listen(PORT, () => {
   console.log(`🚀 Servidor corriendo en el puerto ${PORT}`);
-  console.log(`📁 Frontend servido desde: ${frontendPath}`);
 });
