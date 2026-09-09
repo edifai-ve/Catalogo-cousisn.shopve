@@ -1,0 +1,264 @@
+/* ProductDetail.css - Estilo Elegante y Femenino */
+
+.product-detail-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+/* Botón Volver */
+.back-btn {
+  background-color: #df6295;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: background-color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.back-arrow {
+  font-size: 1.8rem;
+  line-height: 0;
+  margin-right: 10px;
+  transform: translateY(-2px);
+}
+
+.back-btn:hover {
+  background-color: #c94b7b;
+}
+
+/* Producto principal */
+.product-detail-container {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 60px;
+}
+
+.product-images {
+  flex: 1;
+}
+
+.main-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.thumb-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.thumb-image:hover {
+  border-color: #df6295;
+}
+
+/* Cuando la miniatura está seleccionada */
+.thumb-image.active {
+  border-color: #df6295;
+  opacity: 1;
+}
+
+
+
+.product-info {
+  flex: 1;
+}
+
+.detail-category {
+  display: inline-block;
+  background-color: #fce4ec;
+  color: #df6295;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.product-info h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #333333;
+  margin: 0 0 10px 0;
+}
+
+.detail-price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #df6295;
+  margin: 0 0 20px 0;
+}
+
+.detail-description {
+  margin-bottom: 30px;
+}
+
+.detail-description h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #fce4ec;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.detail-description p {
+  color: #666666;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* =========================================
+   RECOMENDADOS: IDENTICOS A LA PÁGINA PRINCIPAL
+   ========================================= */
+.recommended-section h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.recommended-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.recommended-item {
+  background-color: #fff; /* Fondo blanco igual que la principal */
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.recommended-item:hover {
+  transform: translateY(-4px); /* Mismo efecto de elevación */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.recommended-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0; /* Esquinas rectas arriba */
+  transition: transform 0.3s ease;
+}
+
+.recommended-item:hover .recommended-image {
+  transform: scale(1.05); /* El zoom en la imagen */
+}
+
+.recommended-item h4 {
+  margin: 10px 12px 0 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.recommended-price {
+  color: #df6295; /* Rosa, como en la principal */
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-top: 1px solid #D19DB6; /* Línea rosa arriba del precio */
+  padding-top: 8px;
+  margin: 10px 12px 12px 12px;
+  display: block;
+  text-align: center;
+}
+
+/* Responsive para móviles y tablets */
+@media (max-width: 900px) {
+  .recommended-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .recommended-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-detail-container {
+    flex-direction: column;
+  }
+}
+
+/* --- Flechas de navegación de imágenes --- */
+
+/* Contenedor de la imagen para posicionar las flechas dentro */
+.image-slider {
+  position: relative;
+  width: 100%;
+}
+
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff; /* Fondo blanco */
+  color: #df6295; /* Símbolo rosa de la marca */
+  border: 1px solid #fce4ec; /* Borde rosa clarito para que se vea el círculo */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Círculo perfecto y redondeado */
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Flecha izquierda */
+.left-arrow {
+  left: 10px;
+}
+
+/* Flecha derecha */
+.right-arrow {
+  right: 10px;
+}
+
+/* Efecto al pasar el mouse */
+.nav-arrow:hover {
+  background-color: #fce4ec; /* Fondo rosa clarito al pasar el mouse */
+  color: #c94b7b; /* Flecha rosa un poco más oscura */
+  transform: translateY(-50%) scale(1.1); /* Sigue creciendo un poquito */
+}

@@ -5,7 +5,13 @@
     "precio": 13,
     "imagen": "/images/agenda.jpg",
     "descripcion": "Contiene 100 hojas y puedes combinar hasta 5 diseños diferentes en una sola agenda. Ejemplo: Hoja con mensaje motivacional, Calendario, Hojas para datos personales, Hoja para notas, Hojas rayadas",
-    "categoria": "Papelería"
+    "categoria": "Papelería",
+    "imagenes": [
+      "agenda1.jpg",
+      "agenda2.jpg",
+      "agenda3.jpg",
+      "agenda4.jpg"
+    ]
   },
   {
     "id": 2,
@@ -116,7 +122,7 @@
     "nombre": "Cajita tipo acordeón ",
     "precio": 5,
     "imagen": "/images/cajaAcordeon.jpg",
-    "descripcion": "Es ese detalle que dice “cada foto contigo vale oro, ideal oara aniversarios, cumpleaños o amigos del alma” ",
+    "descripcion": "Es ese detalle que dice “cada foto contigo vale oro, ideal para aniversarios, cumpleaños o amigos del alma” ",
     "categoria": "Recuerdos"
   },
   {

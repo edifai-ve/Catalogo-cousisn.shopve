@@ -1,18 +1,22 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // 👈 IMPORTA ESTO
 import './ProductCard.css';
 
 const ProductCard = ({ producto }) => {
-  const { nombre, precio, imagen, descripcion, categoria } = producto;
+  const navigate = useNavigate(); // 👈 Hook
 
-  // Construir la URL de la imagen (SIN el dominio de Railway, solo ruta relativa)
-  const imagenUrl = imagen && imagen.startsWith('/') 
-    ? imagen
-    : imagen || 'https://via.placeholder.com/300x200?text=Sin+Imagen';
+  const { nombre, precio, imagen, descripcion } = producto;
 
-  console.log('🖼️ Cargando imagen:', imagenUrl); // Para depuración
+ const imagenUrl = imagen
+  ? (imagen.startsWith('/') ? imagen : `/images/${imagen}`)
+  : 'https://via.placeholder.com/300x200?text=Sin+Imagen';
+
+  const irAlDetalle = () => {
+    navigate(`/producto/${producto.id}`); // 👈 Navega usando el ID
+  };
 
   return (
-    <div className="product-card">
+    <div className="product-card" onClick={irAlDetalle} style={{ cursor: 'pointer' }}>
       <div className="product-card-image">
         <img 
           src={imagenUrl} 
@@ -23,7 +27,6 @@ const ProductCard = ({ producto }) => {
             e.target.src = 'https://via.placeholder.com/300x200?text=Sin+Imagen';
           }}
         />
-        <span className="product-category">✦ {categoria}</span>
       </div>
       <div className="product-card-body">
         <h3 className="product-card-title">{nombre}</h3>
