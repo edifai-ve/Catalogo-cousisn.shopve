@@ -4,7 +4,7 @@
     "nombre": "Agenda clásica",
     "precio": 13,
     "imagen": "/images/agenda.jpg",
-    "descripcion": "Contiene 100 hojas y puedes combinar hasta 5 diseños diferentes en una sola agenda. Ejemplo: Hoja con mensaje motivacional, Calendario, Hojas para datos personales, Hoja para notas, Hojas rayadas",
+    "descripcion": "Con 100 hojas y hasta 5 diseños diferentes en una sola agenda para que la armes a tu gusto. Combina hoja con mensaje motivacional, calendario, hojas para datos personales, hoja para notas y hojas rayadas, y aprovecha la promo especial llevándote la Agenda clásica más un bolígrafo por 15€.",
     "categoria": "Papelería",
     "imagenes": [
       "agenda1.jpg",
@@ -18,7 +18,7 @@
     "nombre": "Agenda holográfica",
     "precio": 15,
     "imagen": "/images/agendaHolografica.jpg",
-    "descripcion": "Agenda con efecto holográfico, ideal para crear diseños únicos Contiene 100 hojas y puedes combinar hasta 5 diseños diferentes en una sola agenda. ",
+    "descripcion": "Agenda con efecto holográfico: ideal para crear diseños únicos, con 100 hojas y la posibilidad de combinar hasta 5 diseños diferentes en una sola agenda. Aprovecha el combo especial que incluye la agenda holográfica más un bolígrafo 16€. ",
     "categoria": "Papelería"
   },
   {
@@ -26,7 +26,7 @@
     "nombre": "Bolígrafos",
     "precio": 3,
     "imagen": "/images/boligrafo.jpg",
-    "descripcion": "Bolígrafos de tinta de alta calidad, ideal para escritura diaria, personalizados a tu estilo",
+    "descripcion": "Bolígrafos de tinta de alta calidad, personalizados a tu estilo: el detalle perfecto para tu escritura diaria. Añade un toque único a tus notas y escribe cada día con un bolígrafo hecho para acompañar tu estilo personal.",
     "categoria": "Papelería"
   },
   {
@@ -34,47 +34,70 @@
     "nombre": "Portarretratos",
     "precio": 10,
     "imagen": "/images/portarretrato.jpg",
-    "descripcion": "Portarretratos de madera, tamaño pequeño, ideal para fotos familiares o recuerdos especiales",
-    "categoria": "Decoración"
+    "descripcion": " porque algunas fotos no merecen quedarse solo en el celular, regala ese momento especial en un hermoso portarretrato, ideal para fotos familiares o recuerdos especiales. Elige tamaño pequeño por 8 €, mediano por 10 € o grande por 12 €, y acompáñalo con la caja de regalo por 2 € para que tu detalle llegue aún más bonito.",
+    "categoria": "Decoración",
+    "imagenes": [
+      "portarretrato1.jpg",
+      "portarretrato2.jpg",
+      "portarretrato3.jpg"
+    ]
   },
   {
     "id": 5,
     "nombre": "Llavero en acrílico",
     "precio": 2.5,
     "imagen": "/images/llaveroAcrilico.jpg",
-    "descripcion": "Llavero de acrílico transparente, personalizado con tus diseños favoritos Precio: 2.5$, Llavero + caja 3.5$, 2 llaveros + caja 5$",
-    "categoria": "Accesorios"
+    "descripcion": "Llavero de acrílico transparente personalizado con tus diseños favoritos: un detalle único para llevar contigo, con imagen personalizable por los dos lados. Consíguelo por 2.5€, con caja por 3.5€, o aprovecha 2 llaveros + caja por 5€.",
+    "categoria": "Accesorios",
+    "imagenes": [
+      "llaveroAcrilico1.jpg",
+      "llaveroAcrilico2.jpg",
+      "llaveroAcrilico3.jpg"
+    ]
   },
   {
     "id": 6,
     "nombre": "6 Polaroids",
     "precio": 2,
     "imagen": "/images/polaroids.jpg",
-    "descripcion": "Paquete de 6 fotos polaroid, tamaño 10x15cm, ideal para recuerdos y decoración. Puedes personalizar tus fotos con filtros y marcos.",
-    "categoria": "Decoración"
+    "descripcion": "Paquete de 6 fotos polaroid: convierte tus recuerdos favoritos en decoración con estilo y personalízalos a tu gusto. Con un tamaño de 10x15 cm, son ideales para recordar momentos especiales o darle un toque único a tus espacios, y puedes personalizar tus fotos con filtros y marcos para que cada una refleje tu estilo.",
+    "categoria": "Decoración",
+    "imagenes": [
+      "polaroids1.jpg",
+      "polaroids2.jpg"
+    ]
   },
   {
     "id": 7,
     "nombre": "50 tatuajes temporales",
     "precio": 7,
     "imagen": "/images/tatuajes.jpg",
-    "descripcion": "Tatuajes temporales de alta calidad, personalizados e ideales para usar en ocasiones especiales, con un tamaño 3x3cm.",
-    "categoria": "Accesorios"
+    "descripcion": "Tatuajes temporales personalizados de alta calidad: el toque perfecto para ocasiones especiales. Con un tamaño de 3x3 cm, son ideales para lucir tus diseños favoritos y destacar en ese momento único con un detalle original y fácil de llevar.",
+    "categoria": "Accesorios",
+    "imagenes": [
+      "tatuaje1.jpg",
+      "tatuaje2.jpg"
+    ]
   },
   {
     "id": 8,
     "nombre": "Almohada personalizada",
     "precio": 7,
     "imagen": "/images/almohadas.jpg",
-    "descripcion": "Almohada de alta calidad, personalizada con tu diseño favorito",
-    "categoria": "Decoración"
+    "descripcion": "Almohada de alta calidad, personalizada con tu diseño favorito: dale un toque único a tu espacio o regala un detalle realmente especial. Personalízala con ese diseño que tanto te gusta y disfruta de una almohada hecha a tu estilo, perfecta para acompañarte todos los días.",
+    "categoria": "Decoración",
+    "imagenes": [
+      "almohada1.jpg",
+      "almohada2.jpg",
+      "almohada3.jpg"
+    ]
   },
   {
     "id": 9,
     "nombre": "Llavero con espejo",
     "precio": 5,
     "imagen": "/images/llaveroEspejo.jpg",
-    "descripcion": "Llavero sublimado por ambos lados, al abrir contiene dos espejos. Ideal para regalar.",
+    "descripcion": "Llavero sublimado por ambos lados con dos espejos en su interior: el detalle ideal para regalar y sorprender. Un accesorio original y práctico que lleva tu diseño por ambos lados y, al abrirlo, descubre dos espejos, perfecto para tener siempre a mano un toque especial para esa persona que quieres.",
     "categoria": "Accesorios"
   },
   {
@@ -82,31 +105,46 @@
     "nombre": "24 Tags",
     "precio": 1,
     "imagen": "/images/Tags.jpg",
-    "descripcion": "Ideales para personalizar tus obsequios, con imagen en ambos lados. 100% personalizables.",
-    "categoria": "Accesorios"
+    "descripcion": "24 tags 100% personalizables: el detalle perfecto para que tus obsequios luzcan únicos. Ideales para personalizar tus regalos con imagen en ambos lados, para que cada tag acompañe tu presente con un toque especial y totalmente a tu estilo.",
+    "categoria": "Accesorios",
+    "imagenes": [
+      "tags1.jpg",
+      "tags2.jpg"
+    ]
   },
   {
     "id": 11,
     "nombre": "Taza sublimada",
     "precio": 5,
     "imagen": "/images/Taza.jpg",
-    "descripcion": "Taza sublimada con tu diseño favorito. Ideal para regalar o para uso personal .",
-    "categoria": "Decoración"
+    "descripcion": "Con tu diseño favorito, es ideal para regalar o para uso personal. Personalízala con ese diseño que tanto te gusta y conviértela en un detalle único para sorprender a alguien especial o para acompañar tus días con un toque hecho totalmente a tu estilo.",
+    "categoria": "Decoración",
+    "imagenes": [
+      "taza1.jpg",
+      "taza2.jpg",
+      "taza3.jpg",
+      "taza4.jpg"
+    ]
   },
   {
     "id": 12,
     "nombre": "Mini album",
     "precio": 3,
     "imagen": "/images/miniAlbum.jpg",
-    "descripcion": "Tu historia merece ser recordada con cariño… Por eso creamos este mini álbum personalizado que guarda 20 fotos llenas de magia,",
-    "categoria": "Recuerdos"
+    "descripcion": "Tu historia merece ser recordada con cariño. Guarda 20 fotos llenas de magia en un mini álbum creado para conservar esos momentos especiales, y aprovecha la promo de la docena por 20 euros.",
+    "categoria": "Recuerdos",
+    "imagenes": [
+      "miniAlbum1.jpg",
+      "miniAlbum2.jpg",
+      "miniAlbum3.jpg"
+    ]
   },
   {
     "id": 13,
     "nombre": "Carpeta control de embarazo ",
     "precio": 10,
     "imagen": "/images/carpetaEmbarazo.jpg",
-    "descripcion": "Ideal para llevar los resultados de las pruebas, personalizable con relieve.",
+    "descripcion": "Ideal para llevar los resultados de tus pruebas, personalizable con relieve. Mantén organizados esos momentos importantes y hazla única con un relieve a tu gusto, para acompañarte en cada paso de esta etapa tan especial.",
     "categoria": "Carpetas"
   },
   {
@@ -114,71 +152,94 @@
     "nombre": "Toppers personalizados",
     "precio": 2,
     "imagen": "/images/TopperPersonalizado.jpg",
-    "descripcion": "Ideal para decorar tus tortas con tu diseño favorito.",
-    "categoria": "Pastelería"
+    "descripcion": "Decora tus tortas con tu diseño favorito y haz que cada celebración luzca única. Ideales para darle un toque especial a tus tortas con ese diseño que tanto te gusta, porque cada momento merece un detalle hecho a tu estilo.",
+    "categoria": "Pastelería",
+    "imagenes": ["topperPersonalizado1.jpg"]
   },
   {
     "id": 15,
-    "nombre": "Cajita tipo acordeón ",
+    "nombre": "Cajita tipo acordeón",
     "precio": 5,
     "imagen": "/images/cajaAcordeon.jpg",
-    "descripcion": "Es ese detalle que dice “cada foto contigo vale oro, ideal para aniversarios, cumpleaños o amigos del alma” ",
-    "categoria": "Recuerdos"
+    "descripcion": "Ese detalle que dice “cada foto contigo vale oro”. Ideal para aniversarios, cumpleaños o amigos del alma, es la forma perfecta de demostrar cuánto valen esos momentos compartidos y convertir un recuerdo en un regalo lleno de significado.",
+    "categoria": "Recuerdos",
+    "imagenes": ["cajaAcordeon1.jpg"]
   },
   {
     "id": 16,
     "nombre": "Mini glass",
     "precio": 6,
     "imagen": "/images/miniGlass.jpg",
-    "descripcion": "Crea un regalo único personalizado con tus fotos y frase favorita, incluye caja de regalo.",
-    "categoria": "Recuerdos"
+    "descripcion": "Crea un regalo único con tus fotos y tu frase favorita, y sorprende con un detalle hecho a tu estilo. Incluye caja de regalo para que ese momento especial llegue aún más bonito y se convierta en un recuerdo inolvidable.",
+    "categoria": "Recuerdos",
+    "imagenes": [
+      "miniGlass1.jpg",
+      "miniGlass.jpg"
+    ]
   },
   {
     "id": 17,
     "nombre": "Cuadro con luces",
-    "precio": 10,
-    "imagen": "/images/cuadroLuces.jpg",
-    "descripcion": "Cuadro con luces LED, ideal para iluminar tu espacio. Personalizable con tu diseño favorito.",
-    "categoria": "Decoración"
+    "precio": 14,
+    "imagen": "/images/cuadroLuces3.jpg",
+    "descripcion": "Ilumina tu espacio con tu diseño favorito y dale un toque único a cada rincón. Ideal para decorar con luz y estilo, elige el tamaño pequeño por 14 euros (22,17 cm x 17,5 cm) o el de 30 cm x 27 cm por 16 euros, y añade la caja por 2 euros para que tu detalle llegue aún más especial.",
+    "categoria": "Decoración",
+    "imagenes": [
+      "cuadroLuces1",
+      "cuadroLuces",
+"cuadroLuces2"
+    ]
   },
   {
     "id": 18,
     "nombre": "Relicario",
     "precio": 8,
     "imagen": "/images/Relicario.jpg",
-    "descripcion": "Recuerda siempre esa persona especial, con un relicario personalizado con dos imaganes.",
-    "categoria": "Accesorios"
+    "descripcion": "Recuerda siempre a esa persona especial y llévala contigo en un detalle único con dos imágenes. Personalízalo con esas fotos que significan tanto para ti y aprovéchalo con caja por 10 euros, ideal para conservar su recuerdo de una forma muy especial.",
+    "categoria": "Accesorios",
+    "imagenes": ["relicario1.jpg"]
   },
   {
     "id": 19,
     "nombre": "12 Toppers genéricos",
     "precio": 5,
     "imagen": "/images/toppers.jpg",
-    "descripcion": "Toppers genéricos para decorar tus tortas, con mensajes de Happy birthday en vaarios colores.",
-    "categoria": "Pastelería"
+    "descripcion": "Toppers genéricos para decorar tus tortas: dale un toque festivo con mensajes de Happy birthday en varios colores. Ideales para que tu torta luzca especial y llena de color, con ese detalle que no puede faltar en la celebración.",
+    "categoria": "Pastelería",
+    "imagenes": [
+      "toppers1.jpg",
+    "toppers2.jpg"
+  ]
   },
   {
     "id": 20,
     "nombre": "Llavero personalizado",
     "precio": 3,
     "imagen": "/images/llavero.jpg",
-    "descripcion": "Realizamos la sublimación del estampado que desees. Personalizado con ambos lados.",
-    "categoria": "Accesorios"
+    "descripcion": "Sublimamos el estampado que desees y lo llevas por ambos lados. Un detalle único para llevar contigo tus diseños favoritos, hecho a tu estilo y personalizado con ambas caras para que luzca especial desde cualquier ángulo",
+    "categoria": "Accesorios",
+    "imagenes": [
+      "llavero1.jpg",
+    "llavero2.jpg"
+  ]
+    
   },
   {
     "id": 21,
     "nombre": "36 tarjetas de presentación",
     "precio": 1,
     "imagen": "/images/tarjetaPresentacion.jpg",
-    "descripcion": "Tarjetas de presentación personalizadas para tu emprendimiento.",
-    "categoria": "Emprendimiento"
+    "descripcion": "Tarjetas de presentación personalizadas para tu emprendimiento: el detalle perfecto para que tu marca se vea única. Además, tenemos tarjeta porta accesorios, 36x1 euro, o porta accesorio de bambalina igual.",
+    "categoria": "Emprendimiento",
+    "imagenes": [
+      "taejetaPresentacion1.jpg" ]
   },
   {
     "id": 22,
     "nombre": "Lata personalizada",
     "precio": 8,
     "imagen": "/images/lata.jpg",
-    "descripcion": "Lata de regalo personalizada con tu diseño favorito, ideal para obsequiar a tus seres queridos.",
+    "descripcion": "Sorprende a tus seres queridos con un detalle único hecho a su estilo. Personalízala con tu diseño favorito y conviértela en el obsequio perfecto para demostrar cuánto significan para ti.",
     "categoria": "Decoración"
   },
   {
@@ -186,7 +247,7 @@
     "nombre": "Collar del recuerdo",
     "precio": 6,
     "imagen": "/images/collarrecuerdo.jpg",
-    "descripcion": "Atrapamos ese recuerdo, esa persona, esa mascota o ese lugar especial en un collar único e irrompible.",
+    "descripcion": "Atrapa ese recuerdo, esa persona, esa mascota o ese lugar especial en un collar único e irrompible. Un detalle lleno de significado para llevar siempre contigo eso que tanto quieres, porque hay momentos que merecen acompañarte y sentirse cerca en cada día.",
     "categoria": "Accesorios"
   },
   {
@@ -194,7 +255,7 @@
     "nombre": "Etiquetas",
     "precio": 2,
     "imagen": "/images/etiquetas.jpg",
-    "descripcion": "Etiquetas personalizadas diferentes tamaños,3x3 cm (48 unidades por hoja), 4x4 cm (24 unidades por hoja), 5x5 cm (15 unidades por hoja).",
+    "descripcion": "Etiquetas personalizadas en diferentes tamaños: elige el formato ideal para darle un toque único a cada detalle. Disponibles en 3x3 cm con 48 unidades por hoja, 4x4 cm con 24 unidades por hoja y 5x5 cm con 15 unidades por hoja, para que personalices con tu estilo y encuentres siempre la medida perfecta para lo que necesitas.",
     "categoria": "Emprendimiento"
   },
   {
@@ -202,7 +263,7 @@
     "nombre": "Bambalina 2D",
     "precio": 1,
     "imagen": "/images/bambalinas2d.jpg",
-    "descripcion": "Bambalinas 2D, personalizadas con tu diseño favorito, perfecto para decorar tu arbolito de navidad.",
+    "descripcion": "Bambalinas 2D personalizadas: decora tu arbolito de navidad con tu diseño favorito y dale un toque único a tu celebración. Perfectas para que tu árbol luzca especial con detalles hechos a tu estilo, personalizadas con ese diseño que tanto te gusta para que cada rincón navideño se sienta completamente tuyo.",
     "categoria": "Decoración"
   },
   {
@@ -210,7 +271,7 @@
     "nombre": "Bambalina con foto",
     "precio": 3.5,
     "imagen": "/images/bambalina.jpg",
-    "descripcion": "Bambalinas con foto en ambos lados, ideales para decorar tu arbolito de navidad.",
+    "descripcion": "Bambalinas con foto en ambos lados: el adorno que hará que tu arbolito de Navidad se robe todas las miradas y luzca súper lindo. Personalizadas con tus fotos por ambos lados, con la parte exterior transparente y bolas de anime adentro que asemejan la nieve, son ideales para decorar tu arbolito y convertir cada recuerdo en un detalle navideño único que todos van a notar.",
     "categoria": "Decoración"
   }
 ]

@@ -37,7 +37,13 @@ const ProductDetail = () => {
     fetchProducto();
   }, [id]);
 
-  if (loading) return <div className="loading">Cargando producto...</div>;
+   if (loading) return (
+    <div className="loading-container">
+      <div className="loading-spinner"></div>
+      <h2 className="loading-title">Cargando producto...</h2>
+      <p className="loading-subtitle">Preparando los detalles para ti </p>
+    </div>
+  );
   if (!producto) return <div className="error">Producto no encontrado</div>;
 
   // Lógica para construir TODAS las URLs de las imágenes (principal + adicionales)
