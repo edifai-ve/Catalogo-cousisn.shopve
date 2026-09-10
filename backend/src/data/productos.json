@@ -38,8 +38,8 @@
     "categoria": "Decoración",
     "imagenes": [
       "portarretrato1.jpg",
-      "portarretrato2.jpg",
-      "portarretrato3.jpg"
+      "portarretrato2.png",
+      "portarretrato3.png"
     ]
   },
   {
@@ -50,9 +50,9 @@
     "descripcion": "Llavero de acrílico transparente personalizado con tus diseños favoritos: un detalle único para llevar contigo, con imagen personalizable por los dos lados. Consíguelo por 2.5€, con caja por 3.5€, o aprovecha 2 llaveros + caja por 5€.",
     "categoria": "Accesorios",
     "imagenes": [
-      "llaveroAcrilico1.jpg",
-      "llaveroAcrilico2.jpg",
-      "llaveroAcrilico3.jpg"
+      "llaveroAcrilico1.png",
+      "llaveroAcrilico2.png",
+      "llaveroAcrilico3.png"
     ]
   },
   {
@@ -63,7 +63,7 @@
     "descripcion": "Paquete de 6 fotos polaroid: convierte tus recuerdos favoritos en decoración con estilo y personalízalos a tu gusto. Con un tamaño de 10x15 cm, son ideales para recordar momentos especiales o darle un toque único a tus espacios, y puedes personalizar tus fotos con filtros y marcos para que cada una refleje tu estilo.",
     "categoria": "Decoración",
     "imagenes": [
-      "polaroids1.jpg",
+      "polaroids1.jpeg",
       "polaroids2.jpg"
     ]
   },
@@ -134,9 +134,9 @@
     "descripcion": "Tu historia merece ser recordada con cariño. Guarda 20 fotos llenas de magia en un mini álbum creado para conservar esos momentos especiales, y aprovecha la promo de la docena por 20 euros.",
     "categoria": "Recuerdos",
     "imagenes": [
-      "miniAlbum1.jpg",
-      "miniAlbum2.jpg",
-      "miniAlbum3.jpg"
+      "miniAlbum1.jpeg",
+      "miniAlbum2.jpeg",
+      "miniAlbum3.jpeg"
     ]
   },
   {
@@ -173,8 +173,7 @@
     "descripcion": "Crea un regalo único con tus fotos y tu frase favorita, y sorprende con un detalle hecho a tu estilo. Incluye caja de regalo para que ese momento especial llegue aún más bonito y se convierta en un recuerdo inolvidable.",
     "categoria": "Recuerdos",
     "imagenes": [
-      "miniGlass1.jpg",
-      "miniGlass.jpg"
+      "miniGlass1.jpg"
     ]
   },
   {
@@ -185,9 +184,9 @@
     "descripcion": "Ilumina tu espacio con tu diseño favorito y dale un toque único a cada rincón. Ideal para decorar con luz y estilo, elige el tamaño pequeño por 14 euros (22,17 cm x 17,5 cm) o el de 30 cm x 27 cm por 16 euros, y añade la caja por 2 euros para que tu detalle llegue aún más especial.",
     "categoria": "Decoración",
     "imagenes": [
-      "cuadroLuces1",
-      "cuadroLuces",
-"cuadroLuces2"
+      "cuadroLuces1.jpg",
+      "cuadroLuces.jpg",
+      "cuadroLuces2.jpg"
     ]
   },
   {
@@ -232,7 +231,7 @@
     "descripcion": "Tarjetas de presentación personalizadas para tu emprendimiento: el detalle perfecto para que tu marca se vea única. Además, tenemos tarjeta porta accesorios, 36x1 euro, o porta accesorio de bambalina igual.",
     "categoria": "Emprendimiento",
     "imagenes": [
-      "taejetaPresentacion1.jpg" ]
+      "tarjetaPresentacion1.jpg" ]
   },
   {
     "id": 22,
