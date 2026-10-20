@@ -1,8 +1,11 @@
 # Dependencias (NO SUBIR)
+# pnpm-lock.yaml SÍ se sube: el monorepo usa pnpm con lockfile congelado
 node_modules/
-pnpm-lock.yaml
 package-lock.json
 yarn.lock
+
+# Turborepo
+.turbo/
 
 # Variables de entorno
 .env

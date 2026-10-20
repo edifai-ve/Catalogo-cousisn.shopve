@@ -15,18 +15,32 @@ Catálogo de tienda de manualidades y decoraciones con estilo elegante y femenin
 - **Backend:** Node.js + Express
 - **Frontend:** React + Vite
 - **Estilos:** CSS personalizado
+- **Monorepo:** pnpm workspaces + Turborepo
 - **Despliegue:** Railway
+
+## 📁 Estructura
+
+```
+apps/
+  backend/    # API Express (tienda-backend), sirve también el build del frontend
+  frontend/   # React + Vite (tienda-frontend)
+packages/     # Código compartido entre apps (opcional)
+```
 
 ## 📦 Instalación
 
 ```bash
 # Clonar repositorio
 git clone https://github.com/tu-usuario/cousins-shop.git
+cd cousins-shop
 
-# Instalar backend
-cd cousins-shop/backend
+# Instalar todo el monorepo (desde la raíz)
 pnpm install
 
-# Instalar frontend
-cd ../frontend
-pnpm install
+# Levantar backend y frontend a la vez
+pnpm dev
+
+# Compilar y arrancar como en producción
+pnpm build
+pnpm start
+```
